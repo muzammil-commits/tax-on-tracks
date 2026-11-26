@@ -379,7 +379,7 @@ export const PortalPage: React.FC = () => {
               <span>256-Bit Encrypted Client Portal</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold font-heading text-[#061F46] leading-tight">
-              Secure Access to Your <span className="text-[#E0AC00]">PlutoTax</span> Dashboard
+              Secure Access to Your <span className="text-[#E0AC00]">Tax On Tracks</span> Dashboard
             </h1>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
               Upload W-2s and 1099s, track IRS e-file milestones, review Form 1040 drafts, pay invoices, and message your dedicated CPA directly.
@@ -388,7 +388,7 @@ export const PortalPage: React.FC = () => {
             <div className="rounded-3xl overflow-hidden shadow-card-hover border-2 border-white bg-white">
               <img
                 src="/assets/portal-grand-preview.png"
-                alt="PlutoTax Client Portal Preview"
+                alt="Tax On Tracks Client Portal Preview"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -1111,7 +1111,7 @@ export const PortalPage: React.FC = () => {
                     My Services &amp; Requests
                   </h1>
                   <p className="text-xs sm:text-sm text-slate-500">
-                    Manage active engagements or submit a new PlutoTax service request.
+                    Manage active engagements or submit a new Tax On Tracks service request.
                   </p>
                 </div>
                 <button

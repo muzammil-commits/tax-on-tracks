@@ -59,7 +59,7 @@ export const AdminPage: React.FC = () => {
           <div className="space-y-2">
             <Breadcrumbs items={[{ name: 'Admin Console' }]} variant="dark" />
             <h1 className="text-2xl sm:text-4xl font-extrabold font-heading">
-              PlutoTax Management Console
+              Tax On Tracks Management Console
             </h1>
           </div>
           {isAdminAuthenticated && (

@@ -207,8 +207,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         {
           id: 'welcome-1',
           sender: 'cpa',
-          senderName: 'PlutoTax Senior Advisor',
-          text: `Welcome to PlutoTax, ${name}! Your secure portal is active. Please upload your W-2s, 1099s, or prior year returns to begin your review.`,
+          senderName: 'Tax On Tracks Senior Advisor',
+          text: `Welcome to Tax On Tracks, ${name}! Your secure portal is active. Please upload your W-2s, 1099s, or prior year returns to begin your review.`,
           timestamp: 'Just now',
         },
       ],
@@ -216,7 +216,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       notifications: [
         {
           id: 'notif-welcome',
-          title: 'Welcome to PlutoTax Client Portal',
+          title: 'Welcome to Tax On Tracks Client Portal',
           description: 'Your 256-bit encrypted tax vault is ready. Upload documents or request a service to begin.',
           date: 'Just now',
           read: false,

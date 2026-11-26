@@ -21,7 +21,7 @@ export const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
           <Breadcrumbs items={[{ name: 'About Us' }]} variant="dark" />
           <h1 className="text-3xl sm:text-5xl font-extrabold font-heading text-white">
-            About <span className="text-[#FFC400]">PlutoTax</span> Consulting &amp; Advisory
+            About <span className="text-[#FFC400]">Tax On Tracks</span> Consulting &amp; Advisory
           </h1>
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
             {BUSINESS_INFO.tagline}. Headquartered in Austin, Texas, serving individuals, visa holders, NRIs, and businesses across all 50 US states and globally.
@@ -35,7 +35,7 @@ export const AboutPage: React.FC = () => {
           <div className="lg:col-span-6 rounded-3xl overflow-hidden shadow-card border border-slate-200 bg-white">
             <img
               src="/assets/about-bg.png"
-              alt="PlutoTax Advisory Practice"
+              alt="Tax On Tracks Advisory Practice"
               className="w-full h-72 sm:h-96 object-cover object-left"
             />
           </div>
@@ -48,7 +48,7 @@ export const AboutPage: React.FC = () => {
               Precision US &amp; Cross-Border Tax Advisory
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Founded on the principles of regulatory precision and proactive wealth preservation, PlutoTax Consulting &amp; Advisory LLC bridges the gap between standard tax preparation and executive-level financial strategy.
+              Founded on the principles of regulatory precision and proactive wealth preservation, Tax On Tracks bridges the gap between standard tax preparation and executive-level financial strategy.
             </p>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
               Our team of licensed Certified Public Accountants (CPAs), Enrolled Agents (EAs), and IRS Certifying Acceptance Agents (CAAs) handles everything from Form 1040/1040-NR and multi-state corporate returns to FBAR, FATCA, and US-India DTAA optimization.

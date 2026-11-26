@@ -69,7 +69,7 @@ export const HomePage: React.FC = () => {
             </h1>
 
             <p className="text-sm sm:text-base text-[#10264A]/90 leading-relaxed max-w-md font-medium">
-              At PlutoTax Consulting &amp; Advisory LLC, we simplify your US and cross-border tax journey with expert CPA guidance, FBAR/FATCA compliance, and hassle-free e-filing.
+              At Tax On Tracks, we simplify your US and cross-border tax journey with expert CPA guidance, FBAR/FATCA compliance, and hassle-free e-filing.
             </p>
 
             {/* Primary Hero CTAs */}
@@ -217,7 +217,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:hidden rounded-3xl overflow-hidden shadow-card border border-slate-200">
               <img
                 src="/assets/about-bg.png"
-                alt="PlutoTax Trusted Tax Partner"
+                alt="Tax On Tracks Trusted Tax Partner"
                 className="w-full h-56 sm:h-72 object-cover object-left"
               />
             </div>
@@ -229,13 +229,13 @@ export const HomePage: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
                   <div className="space-y-2.5 flex-1">
                     <span className="text-sm font-extrabold uppercase tracking-wider text-[#E0AC00]">
-                      About PlutoTax
+                      About Tax On Tracks
                     </span>
                     <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-[#061F46]">
                       Your Trusted Tax Partner
                     </h2>
                     <p className="text-sm sm:text-base text-[#10264A]/85 leading-relaxed">
-                      PlutoTax Consulting &amp; Advisory LLC is a trusted US &amp; international tax advisory firm, committed to simplifying taxation for individuals, visa holders, NRIs, and businesses with transparent guidance and timely support.
+                      Tax On Tracks is a trusted US &amp; international tax advisory firm, committed to simplifying taxation for individuals, visa holders, NRIs, and businesses with transparent guidance and timely support.
                     </p>
                   </div>
 

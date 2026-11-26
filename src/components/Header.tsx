@@ -23,6 +23,7 @@ import { BUSINESS_INFO } from '../data/plutoData';
 import { useSite } from '../context/SiteContext';
 import { useAuth } from '../context/AuthContext';
 import { DynamicIcon } from './ServiceIcon';
+import { BrandLogo } from './BrandLogo';
 
 export const Header: React.FC = () => {
   const { services } = useSite();
@@ -136,11 +137,7 @@ export const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-[74px] flex items-center justify-between gap-4">
           {/* Logo */}
           <Link to="/" className="flex items-center shrink-0 group">
-            <img
-              src="/assets/logo.png"
-              alt="PlutoTax Consulting & Advisory LLC"
-              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
-            />
+            <BrandLogo variant="light" className="transition-transform duration-200 group-hover:scale-[1.02]" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -199,7 +196,7 @@ export const Header: React.FC = () => {
                   <div className="bg-white rounded-2xl shadow-card-hover border border-slate-200/80 p-4">
                     <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-100">
                       <span className="text-xs font-extrabold uppercase tracking-wider text-[#061F46]">
-                        PlutoTax Specialized Services
+                        Tax On Tracks Specialized Services
                       </span>
                       <Link
                         to="/services"

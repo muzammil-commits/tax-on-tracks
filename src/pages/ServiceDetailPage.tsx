@@ -71,7 +71,7 @@ export const ServiceDetailPage: React.FC = () => {
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-[#FFC400]/40 text-[#FFC400] text-xs font-bold">
                 <DynamicIcon name={service.iconName} className="w-4 h-4" />
-                <span>PlutoTax Specialized Service</span>
+                <span>Tax On Tracks Specialized Service</span>
               </div>
               <h1 className="text-3xl sm:text-5xl font-extrabold font-heading text-white leading-tight">
                 {service.title}
@@ -246,7 +246,7 @@ export const ServiceDetailPage: React.FC = () => {
                 Ready to File or Apply?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Start this service directly in your PlutoTax Client Portal to upload documents and connect with your assigned CPA.
+                Start this service directly in your Tax On Tracks Client Portal to upload documents and connect with your assigned CPA.
               </p>
               <button
                 type="button"

@@ -84,7 +84,7 @@ export const ConsultationModal: React.FC = () => {
                 Free Tax Consultation
               </h3>
               <p className="text-xs text-slate-300">
-                Speak with a licensed PlutoTax CPA or Enrolled Agent
+                Speak with a licensed Tax On Tracks CPA or Enrolled Agent
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export const ConsultationModal: React.FC = () => {
                 Consultation Request Received!
               </h4>
               <p className="text-sm text-slate-600 max-w-md mx-auto">
-                Thank you, <strong>{fullName}</strong>. A PlutoTax advisor will reach out via{' '}
+                Thank you, <strong>{fullName}</strong>. A Tax On Tracks advisor will reach out via{' '}
                 <strong>{preferredContact}</strong> within 1 business day regarding{' '}
                 <strong>{serviceRequired}</strong>.
               </p>

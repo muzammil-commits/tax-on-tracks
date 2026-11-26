@@ -32,7 +32,7 @@ export const ServicesPage: React.FC = () => {
                 Our <span className="text-[#FFC400]">Tax &amp; Advisory</span> Services
               </h1>
               <p className="text-sm sm:text-base text-slate-300 mt-2 max-w-2xl">
-                Explore all 9 specialized US and international tax services delivered by licensed PlutoTax CPAs, Enrolled Agents, and Certifying Acceptance Agents.
+                Explore all 9 specialized US and international tax services delivered by licensed Tax On Tracks CPAs, Enrolled Agents, and Certifying Acceptance Agents.
               </p>
             </div>
             <div className="relative w-full md:w-72">

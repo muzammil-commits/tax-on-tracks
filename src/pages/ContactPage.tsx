@@ -41,7 +41,7 @@ export const ContactPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
           <Breadcrumbs items={[{ name: 'Contact Us' }]} variant="dark" />
           <h1 className="text-3xl sm:text-5xl font-extrabold font-heading text-white">
-            Contact <span className="text-[#FFC400]">PlutoTax</span> Advisory
+            Contact <span className="text-[#FFC400]">Tax On Tracks</span> Advisory
           </h1>
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl">
             Reach our Austin headquarters by phone, WhatsApp, email, or submit an enquiry below for a response from a licensed CPA.

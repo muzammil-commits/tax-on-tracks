@@ -15,11 +15,11 @@ export function downloadTaxOrganizerPDF(year: string, clientName: string, client
   doc.setTextColor(255, 255, 255);
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(20);
-  doc.text('PLUTOTAX CONSULTING & ADVISORY LLC', 36, 38);
+  doc.text('TAX ON TRACKS', 36, 38);
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(10);
   doc.setTextColor(234, 243, 255);
-  doc.text('814 San Jacinto Suite 400, Austin, TX 78701 | +1 (254) 221-0222 | support@plutotax.com', 36, 56);
+  doc.text('814 San Jacinto Suite 400, Austin, TX 78701 | +1 (254) 221-0222 | support@taxontracks.com', 36, 56);
   doc.text('IRS Authorized e-file Provider | Certifying Acceptance Agent (CAA)', 36, 70);
 
   doc.setTextColor(navy[0], navy[1], navy[2]);
@@ -93,13 +93,13 @@ export function downloadTaxOrganizerPDF(year: string, clientName: string, client
   doc.text('• Penalty Protection: Timely filing under IRS safe-harbor rules and extension guidelines.', 48, 597);
   doc.text('• Circular 230 Standards: Strict adherence to confidentiality under Internal Revenue Code Sec. 7216.', 48, 612);
   doc.text('• Audit Assistance: Comprehensive IRS and State audit representation included with your filing.', 48, 627);
-  doc.text('Certified by: Michael Miller, CPA | Senior Partner, PlutoTax Consulting & Advisory LLC', 48, 650);
+  doc.text('Certified by: Michael Miller, CPA | Senior Partner, Tax On Tracks', 48, 650);
 
   doc.setFont('helvetica', 'italic');
   doc.setFontSize(8);
   doc.setTextColor(slate[0], slate[1], slate[2]);
-  doc.text('Confidential Client Intake Document — PlutoTax Consulting & Advisory LLC — Page 1 of 1', 36, 700);
-  doc.save(`PlutoTax_Tax_Organizer_${year}.pdf`);
+  doc.text('Confidential Client Intake Document — Tax On Tracks — Page 1 of 1', 36, 700);
+  doc.save(`Tax On Tracks_Tax_Organizer_${year}.pdf`);
 }
 
 export interface ReturnSummaryPayload {
@@ -130,7 +130,7 @@ export function downloadTaxReturnPDF(payload: ReturnSummaryPayload) {
   doc.setTextColor(255, 255, 255);
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(18);
-  doc.text('PLUTOTAX CONSULTING & ADVISORY LLC', 36, 36);
+  doc.text('TAX ON TRACKS', 36, 36);
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9.5);
   doc.setTextColor(234, 243, 255);
@@ -194,12 +194,12 @@ export function downloadTaxReturnPDF(payload: ReturnSummaryPayload) {
   doc.text('Under penalties of perjury, I declare that I have examined this return and accompanying schedules', 48, 505);
   doc.text('and statements, and to the best of my knowledge and belief, they are true, correct, and complete.', 48, 520);
   doc.text(`Signed by: ${payload.cpaName || 'Michael Miller, CPA'} (PTIN: P01894216 | Firm EIN: 92-3841920)`, 48, 542);
-  doc.text(`Transmission Timestamp: ${new Date().toISOString()} via PlutoTax TLS 1.3 Vault`, 48, 557);
+  doc.text(`Transmission Timestamp: ${new Date().toISOString()} via Tax On Tracks TLS 1.3 Vault`, 48, 557);
 
   doc.setFont('helvetica', 'italic');
   doc.setFontSize(8);
   doc.setTextColor(slate[0], slate[1], slate[2]);
-  doc.text('PlutoTax Consulting & Advisory LLC — IRS Circular 230 Disclosure Protected — Page 1 of 1', 36, 670);
+  doc.text('Tax On Tracks — IRS Circular 230 Disclosure Protected — Page 1 of 1', 36, 670);
   doc.save(`${payload.title.replace(/\s+/g, '_')}_${payload.year}.pdf`);
 }
 
@@ -225,11 +225,11 @@ export function downloadInvoicePDF(
   doc.setTextColor(255, 255, 255);
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(18);
-  doc.text('PLUTOTAX CONSULTING & ADVISORY LLC', 36, 36);
+  doc.text('TAX ON TRACKS', 36, 36);
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9.5);
   doc.setTextColor(234, 243, 255);
-  doc.text('814 San Jacinto Suite 400, Austin, TX 78701 | +1 (254) 221-0222 | support@plutotax.com', 36, 54);
+  doc.text('814 San Jacinto Suite 400, Austin, TX 78701 | +1 (254) 221-0222 | support@taxontracks.com', 36, 54);
   doc.text('Official Professional Services Tax Invoice & Payment Receipt', 36, 68);
 
   doc.setTextColor(navy[0], navy[1], navy[2]);
@@ -310,13 +310,13 @@ export function downloadInvoicePDF(
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(255, 255, 255);
-  doc.text('Thank you for choosing PlutoTax Consulting & Advisory LLC. All advisory services are backed', 48, 460);
+  doc.text('Thank you for choosing Tax On Tracks. All advisory services are backed', 48, 460);
   doc.text('by our 100% accuracy guarantee, free CPA audit support, and year-round tax advisory.', 48, 475);
-  doc.text('Authorized by: PlutoTax Accounting & Billing Department | Austin, Texas', 48, 495);
+  doc.text('Authorized by: Tax On Tracks Accounting & Billing Department | Austin, Texas', 48, 495);
 
   doc.setFont('helvetica', 'italic');
   doc.setFontSize(8);
   doc.setTextColor(slate[0], slate[1], slate[2]);
-  doc.text('Official Receipt — PlutoTax Consulting & Advisory LLC — Page 1 of 1', 36, 600);
-  doc.save(`PlutoTax_Invoice_${invoiceNumber}.pdf`);
+  doc.text('Official Receipt — Tax On Tracks — Page 1 of 1', 36, 600);
+  doc.save(`Tax On Tracks_Invoice_${invoiceNumber}.pdf`);
 }

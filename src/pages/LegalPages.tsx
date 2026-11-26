@@ -25,7 +25,7 @@ export const PrivacyPolicyPage: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 space-y-8 text-sm sm:text-base leading-relaxed text-slate-700">
         <div className="p-4 rounded-2xl bg-[#F6F9FF] border border-blue-200 text-[#061F46] text-xs sm:text-sm">
-          <strong>Internal Revenue Code Section 7216 Statement:</strong> Federal law provides that tax return preparers who disclose or use tax return information for purposes other than preparing tax returns without your prior written consent are subject to criminal penalties. PlutoTax strictly adheres to IRC § 7216 and never sells or discloses your tax records.
+          <strong>Internal Revenue Code Section 7216 Statement:</strong> Federal law provides that tax return preparers who disclose or use tax return information for purposes other than preparing tax returns without your prior written consent are subject to criminal penalties. Tax On Tracks strictly adheres to IRC § 7216 and never sells or discloses your tax records.
         </div>
 
         <div>
@@ -151,7 +151,7 @@ export const SecurityPage: React.FC = () => {
         <div>
           <h2 className="text-xl font-extrabold text-[#061F46] mb-2">IRS Publication 4557 Compliance</h2>
           <p>
-            PlutoTax adheres to the &ldquo;Safeguarding Taxpayer Data&rdquo; guidelines issued by the Internal Revenue Service (IRS Publication 4557). Our administrative and technical controls prevent data theft, unauthorized network intrusions, and identity compromise.
+            Tax On Tracks adheres to the &ldquo;Safeguarding Taxpayer Data&rdquo; guidelines issued by the Internal Revenue Service (IRS Publication 4557). Our administrative and technical controls prevent data theft, unauthorized network intrusions, and identity compromise.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ export const NotFoundPage: React.FC = () => (
     </div>
     <h1 className="text-3xl font-extrabold text-[#061F46] font-heading">Page Not Found</h1>
     <p className="mt-2 text-slate-600 max-w-md text-sm">
-      The page you are looking for may have moved or no longer exists. Return to the PlutoTax homepage or browse our services directory.
+      The page you are looking for may have moved or no longer exists. Return to the Tax On Tracks homepage or browse our services directory.
     </p>
     <div className="mt-6 flex items-center gap-3">
       <Link

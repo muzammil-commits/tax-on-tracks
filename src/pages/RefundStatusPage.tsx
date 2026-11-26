@@ -18,7 +18,7 @@ export const RefundStatusPage: React.FC = () => {
             Track Your <span className="text-[#FFC400]">Tax Refund</span> Status
           </h1>
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl">
-            Check your official IRS Federal or State tax refund status, or sign in to your PlutoTax Client Portal to view your live e-file acknowledgment ID.
+            Check your official IRS Federal or State tax refund status, or sign in to your Tax On Tracks Client Portal to view your live e-file acknowledgment ID.
           </p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export const RefundStatusPage: React.FC = () => {
               </div>
 
               <p className="text-sm text-slate-600 leading-relaxed">
-                To check your federal refund status on the official IRS portal, have the following details from your PlutoTax Form 1040 summary ready:
+                To check your federal refund status on the official IRS portal, have the following details from your Tax On Tracks Form 1040 summary ready:
               </p>
 
               <ul className="space-y-2 text-sm text-[#10264A] bg-[#F6F9FF] p-4 rounded-2xl border border-slate-200">
@@ -107,13 +107,13 @@ export const RefundStatusPage: React.FC = () => {
             <div className="bg-[#061F46] text-white rounded-3xl p-6 sm:p-8 shadow-xl space-y-4">
               <div className="inline-flex items-center gap-2 text-xs font-bold text-[#FFC400]">
                 <ShieldCheck className="w-4 h-4" />
-                <span>PlutoTax Client Portal Tracking</span>
+                <span>Tax On Tracks Client Portal Tracking</span>
               </div>
               <h3 className="text-2xl font-extrabold font-heading">
                 View Your E-File Status &amp; Return Summary
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Already filed with PlutoTax? Log in to your Client Portal to download your signed Form 1040 summary, view your IRS Submission ID, and check your exact refund amount.
+                Already filed with Tax On Tracks? Log in to your Client Portal to download your signed Form 1040 summary, view your IRS Submission ID, and check your exact refund amount.
               </p>
               <Link
                 to="/portal"

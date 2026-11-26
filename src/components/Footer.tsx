@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, Linkedin, Twitter, Facebook, Instagram, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/plutoData';
 import { useSite } from '../context/SiteContext';
+import { BrandLogo } from './BrandLogo';
 
 export const Footer: React.FC = () => {
   const { services } = useSite();
@@ -22,11 +23,7 @@ export const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="md:col-span-4 space-y-4">
             <Link to="/" className="inline-block">
-              <img
-                src="/assets/logo-white.png"
-                alt="PlutoTax Consulting & Advisory LLC"
-                className="h-12 w-auto object-contain"
-              />
+              <BrandLogo variant="dark" />
             </Link>
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
               {BUSINESS_INFO.tagline}. IRS Authorized e-file Provider &amp; Certifying Acceptance Agent (CAA) serving US &amp; international taxpayers.

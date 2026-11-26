@@ -1,21 +1,21 @@
 import { ServiceItem, TestimonialItem, SiteStatistics } from '../types';
 
 export const BUSINESS_INFO = {
-  name: 'PlutoTax Consulting & Advisory LLC',
-  shortName: 'PlutoTax',
-  tagline: 'Your Trusted Partner in Tax Planning, Filing & Financial Confidence',
+  name: 'Tax On Tracks',
+  shortName: 'Tax On Tracks',
+  tagline: 'Your TAX is on right TRACK — Smart Tax Planning, Filing & Financial Confidence',
   address: '814 San Jacinto Suite 400, Austin, TX 78701, USA',
   phone: '+1 (254) 221-0222',
   phoneRaw: '+12542210222',
-  email: 'support@plutotax.com',
+  email: 'info@taxontracks.com',
   whatsappUrl: 'https://wa.me/12542210222',
   irsTrackingUrl: 'https://irs.gov/wheres-my-refund',
   workingHours: 'Monday – Friday: 8:00 AM – 7:00 PM CST | Saturday: 9:00 AM – 3:00 PM CST',
   socialLinks: {
-    linkedin: 'https://linkedin.com/company/plutotax',
-    twitter: 'https://twitter.com/plutotax',
-    facebook: 'https://facebook.com/plutotax',
-    instagram: 'https://instagram.com/plutotax',
+    linkedin: 'https://linkedin.com/company/taxontracks',
+    twitter: 'https://twitter.com/taxontracks',
+    facebook: 'https://facebook.com/taxontracks',
+    instagram: 'https://instagram.com/taxontracks',
   },
 };
 
@@ -36,7 +36,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Proactive tax planning to minimize future tax liabilities, optimize investments, maximize eligible deductions and strategically manage stock options and financial decisions.',
     fullDescription:
-      "True financial success isn't just about filing taxes accurately at year-end; it's about making strategic, forward-looking decisions throughout the year. PlutoTax Advance Tax Planning delivers tailored advisory for high-earning professionals, entrepreneurs, and families with complex assets. We model multi-year tax projections, explore legal tax credits, structure retirement contributions, optimize equity grants (RSUs, ISOs, ESPP), and design entity structures that legally insulate your wealth.",
+      "True financial success isn't just about filing taxes accurately at year-end; it's about making strategic, forward-looking decisions throughout the year. Tax On Tracks Advance Tax Planning delivers tailored advisory for high-earning professionals, entrepreneurs, and families with complex assets. We model multi-year tax projections, explore legal tax credits, structure retirement contributions, optimize equity grants (RSUs, ISOs, ESPP), and design entity structures that legally insulate your wealth.",
     heroImage: '/assets/services/tax-planning.jpg',
     iconName: 'TrendingUp',
     whoNeedsThis: [
@@ -87,7 +87,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Professional federal and state tax return preparation for US citizens, Green Card holders, H1B, L1 and F1 OPT visa holders, including resident, non-resident and dual-status returns.',
     fullDescription:
-      'Navigating US Federal and 50-state tax rules requires meticulous compliance. PlutoTax specializes in individual tax filings with particular depth in foreign visa residency rules, multi-state tax apportionments, remote work state nexus, and resident alien status determination. Whether you file standard Form 1040, non-resident Form 1040-NR, or require a First-Year Choice dual-status return, our licensed CPAs ensure 100% precision and maximum allowable deductions.',
+      'Navigating US Federal and 50-state tax rules requires meticulous compliance. Tax On Tracks specializes in individual tax filings with particular depth in foreign visa residency rules, multi-state tax apportionments, remote work state nexus, and resident alien status determination. Whether you file standard Form 1040, non-resident Form 1040-NR, or require a First-Year Choice dual-status return, our licensed CPAs ensure 100% precision and maximum allowable deductions.',
     heroImage: '/assets/services/federal-tax.jpg',
     iconName: 'FileSpreadsheet',
     whoNeedsThis: [
@@ -134,7 +134,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Foreign financial account and asset reporting, including FBAR (FinCEN Form 114), FATCA (Form 8938) and related international tax compliance.',
     fullDescription:
-      'US tax law requires US persons—including citizens, Green Card holders, and resident aliens (H-1B, L-1)—to disclose offshore financial accounts exceeding specified statutory thresholds. Failure to file FinCEN Form 114 (FBAR) or IRS Form 8938 (FATCA) triggers civil penalties starting at $10,000+ per non-willful violation, and up to 50% of account balances for willful omissions. PlutoTax guides you through complete, compliant foreign asset reporting with zero stress.',
+      'US tax law requires US persons—including citizens, Green Card holders, and resident aliens (H-1B, L-1)—to disclose offshore financial accounts exceeding specified statutory thresholds. Failure to file FinCEN Form 114 (FBAR) or IRS Form 8938 (FATCA) triggers civil penalties starting at $10,000+ per non-willful violation, and up to 50% of account balances for willful omissions. Tax On Tracks guides you through complete, compliant foreign asset reporting with zero stress.',
     heroImage: '/assets/services/fbar-fatca.jpg',
     iconName: 'ShieldAlert',
     whoNeedsThis: [
@@ -181,7 +181,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Assistance with obtaining or renewing Individual Taxpayer Identification Numbers, including Form W-7 preparation and eligible identity-document verification.',
     fullDescription:
-      'Applying for an Individual Taxpayer Identification Number (ITIN) through conventional mail often means mailing your original passport to the IRS for months with significant risk of loss or travel disruption. As an authorized IRS Certifying Acceptance Agent (CAA), PlutoTax is legally licensed by the IRS to verify your original identity documents in-person or via secure video verification, issue an official Certificate of Accuracy (Form W-7 COA), and file your application so you never part with your passport.',
+      'Applying for an Individual Taxpayer Identification Number (ITIN) through conventional mail often means mailing your original passport to the IRS for months with significant risk of loss or travel disruption. As an authorized IRS Certifying Acceptance Agent (CAA), Tax On Tracks is legally licensed by the IRS to verify your original identity documents in-person or via secure video verification, issue an official Certificate of Accuracy (Form W-7 COA), and file your application so you never part with your passport.',
     heroImage: '/assets/services/itin-processing.jpg',
     iconName: 'FileBadge',
     whoNeedsThis: [
@@ -228,7 +228,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Business tax preparation, accounting, bookkeeping, payroll and corporate tax filing for LLCs, S-Corporations, C-Corporations, startups and small businesses.',
     fullDescription:
-      'From early-stage startups and consulting LLCs to mature S-Corporations and multi-state C-Corporations, PlutoTax provides comprehensive bookkeeping, payroll, and corporate tax compliance. We manage corporate returns (Forms 1065, 1120, 1120-S), Schedule C sole proprietorships, franchise tax filings, quarterly estimated taxes, and financial statement compilation, giving you the clarity needed to scale profitably.',
+      'From early-stage startups and consulting LLCs to mature S-Corporations and multi-state C-Corporations, Tax On Tracks provides comprehensive bookkeeping, payroll, and corporate tax compliance. We manage corporate returns (Forms 1065, 1120, 1120-S), Schedule C sole proprietorships, franchise tax filings, quarterly estimated taxes, and financial statement compilation, giving you the clarity needed to scale profitably.',
     heroImage: '/assets/services/business-tax.jpg',
     iconName: 'Building2',
     whoNeedsThis: [
@@ -275,7 +275,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'US-India cross-border tax assistance, Indian income tax returns, DTAA tax credit claims, NRI property transaction guidance and international tax reconciliation.',
     fullDescription:
-      'Indian professionals and NRIs living in the United States face complex tax requirements spanning two sovereign tax jurisdictions: the US Internal Revenue Service and the Indian Income Tax Department. PlutoTax bridges this gap with dual-jurisdiction expertise. We harmonize Indian ITR filings, capital gains on Indian mutual funds, ancestral property sales, TDS on NRO accounts, and claim maximum Foreign Tax Credits (Form 1116) under Article 25 of the US-India Double Tax Avoidance Agreement (DTAA).',
+      'Indian professionals and NRIs living in the United States face complex tax requirements spanning two sovereign tax jurisdictions: the US Internal Revenue Service and the Indian Income Tax Department. Tax On Tracks bridges this gap with dual-jurisdiction expertise. We harmonize Indian ITR filings, capital gains on Indian mutual funds, ancestral property sales, TDS on NRO accounts, and claim maximum Foreign Tax Credits (Form 1116) under Article 25 of the US-India Double Tax Avoidance Agreement (DTAA).',
     heroImage: '/assets/services/nri-tax.jpg',
     iconName: 'Globe2',
     whoNeedsThis: [
@@ -322,7 +322,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Individual and business tax extension preparation and filing to help clients manage tax deadlines and applicable filing penalties.',
     fullDescription:
-      'Tax deadlines can be stressful when missing critical K-1 statements, 1099-B revisions, foreign account values, or complex business ledgers. Filing an official extension with the IRS grants an automatic six-month extension—moving individual deadlines from April 15 to October 15, and business deadlines from March 15 to September 15. PlutoTax prepares and e-files your extension swiftly while calculating estimated payments to eliminate costly late-filing penalties.',
+      'Tax deadlines can be stressful when missing critical K-1 statements, 1099-B revisions, foreign account values, or complex business ledgers. Filing an official extension with the IRS grants an automatic six-month extension—moving individual deadlines from April 15 to October 15, and business deadlines from March 15 to September 15. Tax On Tracks prepares and e-files your extension swiftly while calculating estimated payments to eliminate costly late-filing penalties.',
     heroImage: '/assets/services/tax-extension.jpg',
     iconName: 'Clock',
     whoNeedsThis: [
@@ -369,7 +369,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Professional support for IRS and state tax notices, audit documentation, response preparation and applicable tax resolution processes.',
     fullDescription:
-      'Receiving an unexpected notice from the IRS or a State Department of Revenue (such as CP2000, CP504, or an audit inquiry) can be alarming. Many notices contain automated calculation errors or overlook qualifying deductions. PlutoTax provides formal representation led by licensed Certified Public Accountants (CPAs) and Enrolled Agents. We handle all correspondence directly with tax authorities, assemble substantiating documentation, and defend your rights aggressively.',
+      'Receiving an unexpected notice from the IRS or a State Department of Revenue (such as CP2000, CP504, or an audit inquiry) can be alarming. Many notices contain automated calculation errors or overlook qualifying deductions. Tax On Tracks provides formal representation led by licensed Certified Public Accountants (CPAs) and Enrolled Agents. We handle all correspondence directly with tax authorities, assemble substantiating documentation, and defend your rights aggressively.',
     heroImage: '/assets/services/audit-assistance.jpg',
     iconName: 'ShieldCheck',
     whoNeedsThis: [
@@ -416,7 +416,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       'Ongoing tax advisory for cryptocurrency, stock sales, RSUs, ESPP, ISOs, rental properties, investments and wealth transfers.',
     fullDescription:
-      'Wealth creation brings multi-layered tax obligations. From high-volume cryptocurrency trading and DeFi yields to executive stock vesting, real estate syndications, and intergenerational family wealth transfers, PlutoTax offers year-round advisory that keeps you ahead. We ensure every transaction is structured for maximum capital efficiency, utilizing legal strategies like tax-loss harvesting, QSBS exclusions, Opportunity Zones, and charitable trusts.',
+      'Wealth creation brings multi-layered tax obligations. From high-volume cryptocurrency trading and DeFi yields to executive stock vesting, real estate syndications, and intergenerational family wealth transfers, Tax On Tracks offers year-round advisory that keeps you ahead. We ensure every transaction is structured for maximum capital efficiency, utilizing legal strategies like tax-loss harvesting, QSBS exclusions, Opportunity Zones, and charitable trusts.',
     heroImage: '/assets/services/wealth-advisory.jpg',
     iconName: 'Coins',
     whoNeedsThis: [
@@ -466,7 +466,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
     rating: 5,
     content:
-      'PlutoTax navigated my multi-state RSU vestings and Indian property sale with complete masterfulness. Claiming the US-India DTAA tax credit saved me over $24,000 in double taxation. Their CPA was responsive, proactive, and exceptionally thorough.',
+      'Tax On Tracks navigated my multi-state RSU vestings and Indian property sale with complete masterfulness. Claiming the US-India DTAA tax credit saved me over $24,000 in double taxation. Their CPA was responsive, proactive, and exceptionally thorough.',
     isApproved: true,
     serviceCategory: 'Indian Cross-Border Tax Filing',
   },
@@ -478,7 +478,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
     rating: 5,
     content:
-      'Transitioning our LLC to an S-Corporation through PlutoTax saved our company more than $18,000 in self-employment taxes this year alone. Their monthly bookkeeping and corporate tax preparation are flawless. Truly a first-class financial partner.',
+      'Transitioning our LLC to an S-Corporation through Tax On Tracks saved our company more than $18,000 in self-employment taxes this year alone. Their monthly bookkeeping and corporate tax preparation are flawless. Truly a first-class financial partner.',
     isApproved: true,
     serviceCategory: 'Business Tax & Bookkeeping',
   },
@@ -490,7 +490,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
     rating: 5,
     content:
-      "Getting my spouse's ITIN without having to mail our physical original passport to the IRS was a lifesaver. As a Certifying Acceptance Agent, PlutoTax verified her documents securely in-office, and the ITIN and joint refund arrived smoothly.",
+      "Getting my spouse's ITIN without having to mail our physical original passport to the IRS was a lifesaver. As a Certifying Acceptance Agent, Tax On Tracks verified her documents securely in-office, and the ITIN and joint refund arrived smoothly.",
     isApproved: true,
     serviceCategory: 'ITIN Processing (CAA)',
   },
@@ -513,7 +513,7 @@ export const PROCESS_STEPS = [
     stepNumber: '01',
     title: 'Register & Upload Documents',
     subtitle: 'Quick, encrypted document submission',
-    summary: 'Create your secure PlutoTax portal account and upload your W-2s, 1099s, foreign bank statements, or business balance sheets in minutes.',
+    summary: 'Create your secure Tax On Tracks portal account and upload your W-2s, 1099s, foreign bank statements, or business balance sheets in minutes.',
     icon: 'UploadCloud',
     estimatedTime: '5 - 10 Minutes',
   },
