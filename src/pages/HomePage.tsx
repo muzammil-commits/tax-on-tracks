@@ -48,36 +48,28 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="w-full bg-white text-[#10264A]">
-      {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-[#F6F9FF] border-b border-slate-100">
+      {/* 1. HERO SECTION — exact composition from image.png & image copy.png */}
+      <section className="relative overflow-hidden bg-[#F6F9FF]">
         {/* Desktop Background Image (image copy 2.png) */}
         <div
-          className="hidden md:block absolute inset-0 bg-cover bg-right bg-no-repeat"
+          className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/hero-desktop-bg.png')" }}
         />
         {/* Mobile Background Image (image copy 3.png) */}
         <div
-          className="md:hidden absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+          className="md:hidden absolute inset-0 bg-cover bg-top bg-no-repeat"
           style={{ backgroundImage: "url('/assets/hero-mobile-bg.png')" }}
         />
-        {/* Subtle readability overlay on left for text contrast */}
-        <div className="hidden md:block absolute inset-y-0 left-0 w-[56%] bg-gradient-to-r from-white/95 via-white/85 to-transparent pointer-events-none" />
-        <div className="md:hidden absolute inset-x-0 top-0 h-[68%] bg-gradient-to-b from-white/95 via-white/85 to-transparent pointer-events-none" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-56 md:py-20 lg:py-24">
-          <div className="max-w-xl lg:max-w-2xl space-y-5 animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#061F46]/5 border border-[#061F46]/15 text-[#061F46] text-xs font-bold tracking-wide">
-              <ShieldCheck className="w-4 h-4 text-[#FFC400]" />
-              <span>IRS Authorized e-file Provider &amp; Certifying Acceptance Agent</span>
-            </div>
-
-            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-extrabold font-heading leading-[1.12] tracking-tight text-[#061F46]">
-              Smart Tax Solutions <br className="hidden sm:block" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-64 sm:pb-72 md:py-20 lg:py-24">
+          <div className="max-w-lg lg:max-w-xl space-y-5 animate-fade-up">
+            <h1 className="text-3xl sm:text-5xl lg:text-[52px] font-extrabold font-heading leading-[1.12] tracking-tight text-[#061F46]">
+              Smart Tax Solutions <br />
               for a <span className="text-[#FFC400]">Secure Tomorrow</span>
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg text-[#10264A]/85 leading-relaxed max-w-xl">
-              At PlutoTax Consulting &amp; Advisory LLC, we simplify your US and cross-border tax journey with licensed CPAs, FBAR/FATCA compliance, ITIN CAA verification, and hassle-free e-filing.
+            <p className="text-sm sm:text-base text-[#10264A]/90 leading-relaxed max-w-md font-medium">
+              At PlutoTax Consulting &amp; Advisory LLC, we simplify your US and cross-border tax journey with expert CPA guidance, FBAR/FATCA compliance, and hassle-free e-filing.
             </p>
 
             {/* Primary Hero CTAs */}
@@ -85,22 +77,15 @@ export const HomePage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => openConsultationModal()}
-                className="inline-flex items-center gap-2 bg-[#FFC400] hover:bg-[#FFD233] text-[#061F46] font-extrabold px-6 py-3.5 rounded-full text-sm shadow-gold transition-all hover:scale-[1.02] active:scale-[0.98]"
+                className="inline-flex items-center gap-2 bg-[#FFC400] hover:bg-[#FFD233] text-[#061F46] font-extrabold px-6 py-3 rounded-full text-sm shadow-gold transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
                 <span>Get Expert Advice</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <Link
-                to="/services"
-                className="inline-flex items-center gap-2 bg-white/95 hover:bg-[#061F46] text-[#061F46] hover:text-white border-2 border-[#061F46]/25 hover:border-[#061F46] font-bold px-5 py-3 rounded-full text-sm shadow-sm transition-all"
-              >
-                <span>Explore Services</span>
-              </Link>
-
-              <Link
                 to="/portal"
-                className="inline-flex items-center gap-2 bg-[#061F46] hover:bg-[#0A2D5B] text-white font-bold px-5 py-3.5 rounded-full text-sm shadow-md transition-all"
+                className="inline-flex items-center gap-2 bg-white/95 hover:bg-[#061F46] text-[#061F46] hover:text-white border-2 border-[#061F46] font-bold px-5 py-2.5 rounded-full text-sm shadow-sm transition-all"
               >
                 <Lock className="w-3.5 h-3.5 text-[#FFC400]" />
                 <span>{currentUser ? 'Open Portal' : 'Client Portal'}</span>
@@ -109,65 +94,60 @@ export const HomePage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setEstimatorOpen(true)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#061F46] hover:text-[#0A2D5B] underline underline-offset-4 px-2 py-2"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#061F46] hover:text-[#0A2D5B] underline underline-offset-4 px-1 py-2"
               >
-                <Calculator className="w-3.5 h-3.5 text-[#FFC400]" />
-                <span>Quick Refund Estimator</span>
+                <Calculator className="w-3.5 h-3.5 text-[#E0AC00]" />
+                <span>Refund Estimator</span>
               </button>
             </div>
 
             {/* Trust Metrics Strip */}
-            <div className="pt-4 flex flex-wrap items-center gap-5 sm:gap-7">
-              <div className="flex items-center gap-2.5 pr-4 border-r border-slate-300/70">
-                <div className="w-9 h-9 rounded-full bg-[#FFC400]/20 text-[#061F46] flex items-center justify-center">
-                  <Award className="w-5 h-5 text-[#E0AC00]" />
+            <div className="pt-3 flex flex-wrap items-center gap-4 sm:gap-6">
+              <div className="flex items-center gap-2 pr-4 border-r border-slate-300/80">
+                <div className="w-8 h-8 rounded-full bg-[#FFC400]/25 text-[#061F46] flex items-center justify-center">
+                  <Award className="w-4 h-4 text-[#E0AC00]" />
                 </div>
                 <div>
-                  <div className="text-lg font-extrabold text-[#061F46] leading-tight">
+                  <div className="text-base sm:text-lg font-extrabold text-[#061F46] leading-tight">
                     {statistics.returnsFiled}
                   </div>
                   <div className="text-[11px] font-semibold text-slate-600">Returns Filed</div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 pr-4 border-r border-slate-300/70">
-                <div className="w-9 h-9 rounded-full bg-[#FFC400]/20 text-[#061F46] flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-[#E0AC00]" />
+              <div className="flex items-center gap-2 pr-4 border-r border-slate-300/80">
+                <div className="w-8 h-8 rounded-full bg-[#FFC400]/25 text-[#061F46] flex items-center justify-center">
+                  <TrendingUp className="w-4 h-4 text-[#E0AC00]" />
                 </div>
                 <div>
-                  <div className="text-lg font-extrabold text-[#061F46] leading-tight">
+                  <div className="text-base sm:text-lg font-extrabold text-[#061F46] leading-tight">
                     {statistics.refundsMaximized}
                   </div>
                   <div className="text-[11px] font-semibold text-slate-600">Refunds Maximized</div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-full bg-[#FFC400]/20 text-[#061F46] flex items-center justify-center">
-                  <Star className="w-5 h-5 text-[#FFC400] fill-[#FFC400]" />
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-[#FFC400]/25 text-[#061F46] flex items-center justify-center">
+                  <Star className="w-4 h-4 text-[#FFC400] fill-[#FFC400]" />
                 </div>
                 <div>
-                  <div className="text-lg font-extrabold text-[#061F46] leading-tight">
+                  <div className="text-base sm:text-lg font-extrabold text-[#061F46] leading-tight">
                     {statistics.clientSatisfaction}
                   </div>
-                  <div className="text-[11px] font-semibold text-slate-600">Client Satisfaction</div>
+                  <div className="text-[11px] font-semibold text-slate-600">Client Rating</div>
                 </div>
               </div>
             </div>
-            {!statistics.isOwnerVerified && (
-              <p className="text-[10px] text-slate-400">
-                * Reference metrics pending owner audit verification.
-              </p>
-            )}
           </div>
         </div>
       </section>
 
       {/* 2. OUR SERVICES SECTION */}
-      <section className="py-16 sm:py-20 bg-[#F6F9FF] relative">
+      <section className="py-14 sm:py-18 bg-[#F6F9FF] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="text-center max-w-2xl mx-auto mb-10">
               <div className="flex items-center justify-center gap-4 mb-2">
                 <span className="h-[2px] w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#FFC400]" />
                 <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-[#061F46]">
@@ -181,16 +161,14 @@ export const HomePage: React.FC = () => {
             </div>
           </Reveal>
 
-          {/* Service Cards Grid (5 per row on xl desktop, 3 on lg, 2 on sm, 1 on mobile) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
             {services.map((service, idx) => (
-              <Reveal key={service.id} delayMs={idx * 45} className="h-full">
+              <Reveal key={service.id} delayMs={idx * 40} className="h-full">
                 <Link
                   to={`/services/${service.slug}`}
                   className="group h-full flex flex-col bg-white rounded-2xl border border-slate-200/80 shadow-card hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
                 >
-                  {/* Related Service Photo + Overlapping Navy/Gold Icon */}
-                  <div className="relative h-32 w-full overflow-hidden bg-[#061F46]">
+                  <div className="relative h-28 w-full overflow-hidden bg-[#061F46]">
                     <img
                       src={service.heroImage}
                       alt={service.title}
@@ -198,15 +176,14 @@ export const HomePage: React.FC = () => {
                       className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#061F46]/80 via-[#061F46]/20 to-transparent" />
-                    <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#061F46] border-2 border-[#FFC400] text-[#FFC400] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#061F46] border-2 border-[#FFC400] text-[#FFC400] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                       <DynamicIcon name={service.iconName} className="w-5 h-5" />
                     </div>
                   </div>
 
-                  {/* Card Body */}
-                  <div className="p-4 pt-3.5 flex-1 flex flex-col justify-between text-center">
+                  <div className="p-4 pt-3 flex-1 flex flex-col justify-between text-center">
                     <div>
-                      <h3 className="text-[15px] font-extrabold font-heading text-[#061F46] group-hover:text-[#0A2D5B] leading-snug mb-2">
+                      <h3 className="text-[15px] font-extrabold font-heading text-[#061F46] group-hover:text-[#0A2D5B] leading-snug mb-1.5">
                         {service.title}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
@@ -214,8 +191,8 @@ export const HomePage: React.FC = () => {
                       </p>
                     </div>
 
-                    <div className="pt-4 mt-3 border-t border-slate-100">
-                      <span className="inline-flex items-center gap-1 text-xs font-extrabold text-[#061F46] group-hover:text-[#0A2D5B] border-b-2 border-[#FFC400] pb-0.5">
+                    <div className="pt-3 mt-3 border-t border-slate-100">
+                      <span className="inline-flex items-center gap-1 text-xs font-extrabold text-[#061F46] border-b-2 border-[#FFC400] pb-0.5">
                         <span>Learn More</span>
                         <ArrowRight className="w-3.5 h-3.5 text-[#E0AC00] group-hover:translate-x-1 transition-transform" />
                       </span>
@@ -228,41 +205,37 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. ABOUT PLUTOTAX SECTION (uses image copy 5.png as section bg) */}
-      <section className="relative overflow-hidden bg-white border-y border-slate-100">
-        {/* Background Image (image copy 5.png) on desktop */}
+      {/* 3. ABOUT SECTION (uses image copy 5.png as section bg) */}
+      <section className="relative overflow-hidden bg-white">
         <div
           className="hidden lg:block absolute inset-0 bg-cover bg-left bg-no-repeat"
           style={{ backgroundImage: "url('/assets/about-bg.png')" }}
         />
-        <div className="hidden lg:block absolute inset-y-0 right-0 w-[58%] bg-gradient-to-l from-white via-white/95 to-transparent pointer-events-none" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-18">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            {/* Mobile / Tablet visual */}
             <div className="lg:hidden rounded-3xl overflow-hidden shadow-card border border-slate-200">
               <img
                 src="/assets/about-bg.png"
-                alt="PlutoTax Legal & Financial Expertise"
+                alt="PlutoTax Trusted Tax Partner"
                 className="w-full h-56 sm:h-72 object-cover object-left"
               />
             </div>
 
             <div className="hidden lg:block lg:col-span-5" />
 
-            {/* Right Text Content */}
             <div className="lg:col-span-7 space-y-5">
               <Reveal>
-                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-6">
-                  <div className="space-y-3 flex-1">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
+                  <div className="space-y-2.5 flex-1">
                     <span className="text-sm font-extrabold uppercase tracking-wider text-[#E0AC00]">
                       About PlutoTax
                     </span>
                     <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-[#061F46]">
                       Your Trusted Tax Partner
                     </h2>
-                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                      PlutoTax Consulting &amp; Advisory LLC is a premier US and international tax advisory firm headquartered in Austin, Texas. We simplify complex federal, multi-state, and cross-border taxation for individuals, visa holders, NRIs, and businesses.
+                    <p className="text-sm sm:text-base text-[#10264A]/85 leading-relaxed">
+                      PlutoTax Consulting &amp; Advisory LLC is a trusted US &amp; international tax advisory firm, committed to simplifying taxation for individuals, visa holders, NRIs, and businesses with transparent guidance and timely support.
                     </p>
                   </div>
 
@@ -280,10 +253,10 @@ export const HomePage: React.FC = () => {
                   </div>
                 </div>
 
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-sm font-semibold text-[#10264A]">
+                <ul className="space-y-2 pt-2 text-sm font-semibold text-[#10264A]">
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-5 h-5 text-[#FFC400] fill-[#061F46] shrink-0" />
-                    <span>Licensed CPAs, EAs &amp; IRS CAAs</span>
+                    <span>Expert &amp; Experienced CPA / EA Team</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-5 h-5 text-[#FFC400] fill-[#061F46] shrink-0" />
@@ -291,11 +264,11 @@ export const HomePage: React.FC = () => {
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-5 h-5 text-[#FFC400] fill-[#061F46] shrink-0" />
-                    <span>US-India DTAA &amp; FBAR Specialists</span>
+                    <span>US-India DTAA, FBAR &amp; ITIN CAA Solutions</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-5 h-5 text-[#FFC400] fill-[#061F46] shrink-0" />
-                    <span>256-Bit Encrypted Client Portal</span>
+                    <span>Dedicated 256-Bit Encrypted Client Portal</span>
                   </li>
                 </ul>
 
@@ -314,8 +287,11 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. WHY CHOOSE US? NAVY STRIP */}
-      <section className="relative bg-[#061F46] text-white py-12 sm:py-14 overflow-hidden">
+      {/* 4. WHY CHOOSE US? NAVY STRIP WITH CURVED GOLD/WHITE DIVIDERS */}
+      <section className="relative bg-[#061F46] text-white py-14 sm:py-16 overflow-hidden">
+        {/* Top subtle golden curved accent */}
+        <div className="pointer-events-none absolute top-0 inset-x-0 h-3 bg-gradient-to-r from-[#061F46] via-[#FFC400] to-[#061F46] opacity-90" />
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div className="md:col-span-4 space-y-1.5 text-center md:text-left">
@@ -323,10 +299,10 @@ export const HomePage: React.FC = () => {
                 Why Choose Us?
               </h2>
               <p className="text-sm font-bold text-[#FFC400]">Because Your Trust Matters</p>
-              <div className="w-16 h-0.5 bg-[#FFC400] mx-auto md:mx-0 mt-2" />
+              <div className="w-20 h-0.5 bg-[#FFC400] mx-auto md:mx-0 mt-2" />
             </div>
 
-            <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-6 md:divide-x md:divide-white/20">
+            <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-6 md:divide-x md:divide-white/25">
               <div className="flex flex-col items-center text-center px-2 space-y-2">
                 <ShieldCheck className="w-8 h-8 text-[#FFC400]" />
                 <div className="text-xs sm:text-sm font-bold leading-snug">
@@ -336,13 +312,13 @@ export const HomePage: React.FC = () => {
               <div className="flex flex-col items-center text-center px-2 space-y-2">
                 <Clock className="w-8 h-8 text-[#FFC400]" />
                 <div className="text-xs sm:text-sm font-bold leading-snug">
-                  On-Time E-File Service
+                  On-Time Service
                 </div>
               </div>
               <div className="flex flex-col items-center text-center px-2 space-y-2">
                 <Users className="w-8 h-8 text-[#FFC400]" />
                 <div className="text-xs sm:text-sm font-bold leading-snug">
-                  Expert CPAs &amp; EAs
+                  Expert Professionals
                 </div>
               </div>
               <div className="flex flex-col items-center text-center px-2 space-y-2">
@@ -354,13 +330,21 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Bottom curved golden/white wave */}
+        <div className="pointer-events-none absolute bottom-0 inset-x-0 overflow-hidden leading-none">
+          <svg viewBox="0 0 1440 36" fill="none" className="w-full h-5 sm:h-7" preserveAspectRatio="none">
+            <path d="M0 10 C360 36 1080 0 1440 20 L1440 36 L0 36 Z" fill="#FFC400" />
+            <path d="M0 18 C360 40 1080 6 1440 26 L1440 36 L0 36 Z" fill="#F6F9FF" />
+          </svg>
+        </div>
       </section>
 
-      {/* 5. OUR PROCESS SECTION */}
-      <section className="py-16 sm:py-20 bg-[#F6F9FF]">
+      {/* 5. OUR PROCESS SECTION — matching horizontal numbered flow in image.png */}
+      <section className="py-14 sm:py-16 bg-[#F6F9FF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="text-center max-w-2xl mx-auto mb-10">
               <div className="flex items-center justify-center gap-4 mb-2">
                 <span className="h-[2px] w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#FFC400]" />
                 <h2 className="text-2xl sm:text-4xl font-extrabold font-heading text-[#061F46]">
@@ -374,7 +358,7 @@ export const HomePage: React.FC = () => {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             <div className="lg:col-span-2 text-center lg:text-left">
               <p className="font-serif italic text-xl sm:text-2xl text-[#061F46] leading-snug">
                 Easy. Reliable. <br className="hidden lg:block" />
@@ -382,22 +366,27 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="lg:col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="lg:col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {PROCESS_STEPS.map((step, idx) => (
-                <Reveal key={step.stepNumber} delayMs={idx * 70}>
-                  <div className="relative bg-white rounded-2xl p-5 border border-slate-200/80 shadow-card h-full flex flex-col items-center text-center">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="w-10 h-10 rounded-full bg-[#FFC400] text-[#061F46] font-black text-sm flex items-center justify-center shadow-sm">
+                <Reveal key={step.stepNumber} delayMs={idx * 60}>
+                  <div className="relative flex flex-col items-center text-center px-2">
+                    <div className="flex items-center justify-center gap-3 mb-3">
+                      <span className="w-10 h-10 rounded-full bg-[#FFC400] text-[#061F46] font-black text-sm flex items-center justify-center shadow-md">
                         {step.stepNumber}
                       </span>
-                      <div className="w-10 h-10 rounded-xl bg-[#F6F9FF] text-[#061F46] flex items-center justify-center border border-slate-200">
+                      <div className="w-11 h-11 rounded-xl bg-white text-[#061F46] flex items-center justify-center border border-slate-200 shadow-sm">
                         <DynamicIcon name={step.icon} className="w-5 h-5" />
                       </div>
+                      {idx < PROCESS_STEPS.length - 1 && (
+                        <ArrowRight className="hidden lg:block w-5 h-5 text-[#FFC400] ml-1" />
+                      )}
                     </div>
-                    <h3 className="text-sm font-extrabold font-heading text-[#061F46] mb-1.5">
+                    <h3 className="text-sm font-extrabold font-heading text-[#061F46] mb-1">
                       {step.title}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed">{step.summary}</p>
+                    <p className="text-xs text-slate-600 leading-relaxed max-w-[220px]">
+                      {step.subtitle}
+                    </p>
                   </div>
                 </Reveal>
               ))}
@@ -408,35 +397,35 @@ export const HomePage: React.FC = () => {
 
       {/* 6. WHAT OUR CLIENTS SAY (TESTIMONIAL CAROUSEL) */}
       {currentReview && (
-        <section className="py-14 sm:py-16 bg-white border-t border-slate-100">
+        <section className="py-12 sm:py-14 bg-gradient-to-b from-[#F6F9FF] to-white border-t border-slate-200/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-3 space-y-1.5 text-center lg:text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+              <div className="lg:col-span-3 space-y-1 text-center lg:text-left">
                 <h2 className="text-2xl sm:text-3xl font-extrabold font-heading text-[#061F46]">
                   What Our Clients Say
                 </h2>
                 <p className="text-sm font-semibold text-slate-500">Trusted by Thousands</p>
               </div>
 
-              <div className="lg:col-span-9 flex items-center gap-3 sm:gap-5">
+              <div className="lg:col-span-9 flex items-center gap-3 sm:gap-4">
                 <button
                   type="button"
                   onClick={handlePrevReview}
                   aria-label="Previous testimonial"
-                  className="w-10 h-10 rounded-full bg-[#FFC400] hover:bg-[#FFD233] text-[#061F46] flex items-center justify-center shadow shrink-0 transition-transform hover:scale-105"
+                  className="w-10 h-10 rounded-full bg-[#FFC400] hover:bg-[#FFD233] text-[#061F46] flex items-center justify-center shadow-md shrink-0 transition-transform hover:scale-105"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
 
-                <div className="flex-1 bg-[#F6F9FF] rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-card flex flex-col sm:flex-row items-center gap-6">
+                <div className="flex-1 bg-white rounded-3xl p-5 sm:p-7 border border-slate-200/80 shadow-card flex flex-col sm:flex-row items-center gap-5">
                   <img
                     src={currentReview.avatar}
                     alt={currentReview.name}
-                    className="w-20 h-20 rounded-2xl object-cover border-2 border-[#FFC400] shadow-md shrink-0"
+                    className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl object-cover border-2 border-[#FFC400] shadow-md shrink-0"
                   />
                   <div className="flex-1 text-center sm:text-left space-y-2">
                     <div className="flex items-center justify-center sm:justify-between gap-2">
-                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#0A2D5B] bg-white px-2.5 py-0.5 rounded-full border border-slate-200">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#0A2D5B] bg-[#F6F9FF] px-2.5 py-0.5 rounded-full border border-slate-200">
                         {currentReview.serviceCategory}
                       </span>
                       <div className="flex items-center gap-0.5">
@@ -445,13 +434,13 @@ export const HomePage: React.FC = () => {
                         ))}
                       </div>
                     </div>
-                    <p className="text-sm sm:text-base text-[#10264A] italic leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#10264A] italic leading-relaxed">
                       &ldquo;{currentReview.content}&rdquo;
                     </p>
                     <div className="text-xs sm:text-sm font-extrabold text-[#061F46]">
                       — {currentReview.name}{' '}
                       <span className="font-medium text-slate-500">
-                        ({currentReview.role}, {currentReview.company})
+                        ({currentReview.role})
                       </span>
                     </div>
                   </div>
@@ -461,14 +450,14 @@ export const HomePage: React.FC = () => {
                   type="button"
                   onClick={handleNextReview}
                   aria-label="Next testimonial"
-                  className="w-10 h-10 rounded-full bg-[#FFC400] hover:bg-[#FFD233] text-[#061F46] flex items-center justify-center shadow shrink-0 transition-transform hover:scale-105"
+                  className="w-10 h-10 rounded-full bg-[#FFC400] hover:bg-[#FFD233] text-[#061F46] flex items-center justify-center shadow-md shrink-0 transition-transform hover:scale-105"
                 >
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
             </div>
 
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center gap-2 mt-5">
               {approvedTestimonials.map((t, idx) => (
                 <button
                   key={t.id}
@@ -486,7 +475,7 @@ export const HomePage: React.FC = () => {
       )}
 
       {/* 7. LET'S GET STARTED TODAY CTA BAND */}
-      <section className="bg-[#0A2D5B] text-white py-10 border-t-4 border-[#FFC400]">
+      <section className="relative bg-[#0A2D5B] text-white py-10 border-t-4 border-[#FFC400]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4 text-center sm:text-left">
             <div className="hidden sm:flex w-14 h-14 rounded-2xl bg-white/10 border border-[#FFC400]/40 text-[#FFC400] items-center justify-center shrink-0">
@@ -497,7 +486,7 @@ export const HomePage: React.FC = () => {
                 Let&apos;s Get Started Today!
               </h2>
               <p className="text-xs sm:text-sm text-slate-200 mt-0.5">
-                Get expert tax assistance from PlutoTax CPAs and keep your finances on track.
+                Get expert tax assistance and keep your finances on track.
               </p>
             </div>
           </div>
